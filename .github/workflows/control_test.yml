@@ -13,9 +13,6 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Add pytest directory to PATH
-        run: echo "::add-path::/home/ubuntu/.local/bin"
-
       - name: Install pytest and flake8
         run: |
           pip install pytest
@@ -23,7 +20,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest.py
+          python -m pytest.py
 
 
       - name: Run flake8
