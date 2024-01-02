@@ -21,7 +21,6 @@ jobs:
       - name: Run tests
         run: |
           pytest
-	working-directory: /github_actions
 
 
       - name: Run flake8
