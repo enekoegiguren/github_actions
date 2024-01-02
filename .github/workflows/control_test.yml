@@ -20,8 +20,6 @@ jobs:
 
       - name: Run tests
         run: |
-	  ls
-	  pwd
           pytest
 	working-directory: /github_actions
 
